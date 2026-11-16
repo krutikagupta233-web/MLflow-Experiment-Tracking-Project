@@ -1,0 +1,12 @@
+name: mlflow-learning-project
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_samples:   {type: int,   default: 300}
+      noise_level: {type: float, default: 0.5}
+      test_size:   {type: float, default: 0.2}
+      alpha:       {type: float, default: 1.0}
+    command: "python train.py --n_samples {n_samples} --noise_level {noise_level} --test_size {test_size} --alpha {alpha}"

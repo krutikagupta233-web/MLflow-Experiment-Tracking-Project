@@ -1,0 +1,51 @@
+# MLflow run data — large and machine-specific, not meant to be committed
+mlruns/
+mlartifacts/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Ruff cache
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temp files written by scripts
+equation.txt
+*.tmp
+
+# Model artifacts (large binaries)
+*.pkl
+*.joblib
+*.skops
+*.h5
+*.pt
+*.pth
